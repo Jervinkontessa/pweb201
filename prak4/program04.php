@@ -4,6 +4,7 @@ require_once("Mahasiswa.php");
 require_once("Daftar_mahasiswa.php");
 require_once("Daftar_dosen.php");
 require_once("Dosen.php");
+require_once("daftar_mahasiswaPA.php");
  ?>
 
 
@@ -29,6 +30,7 @@ require_once("Dosen.php");
        // pembentukan object $mahasiswa dari class Mahasiswa
        // berdasarkan NIM
        $mahasiswa = new Mahasiswa( $_GET['nim'] );
+
        ?>
 <h1>Mahasiswa</h1>
 <table>
@@ -72,18 +74,16 @@ require_once("Dosen.php");
       </div>
       <div class="col4">
         <?php
-        if ( isset( $_GET['nim']) ) {
+           $mahasiswa = new daftar_mahasiswaPA(['dosen_pa']);
 
-        $mahasiswa = new Mahasiswa( $_GET['nim']);
-      
-        ?>
-
+         ?>
      <h1>Daftar Mahasiswa dengan PA yang sama</h1>
      <table>
        <thead>
          <tr>
            <th>NIM</th>
            <th>Mahasiswa</th>
+           <th>Dosen PA</th>
          </tr>
        </thead>
        <tbody>
@@ -96,6 +96,7 @@ require_once("Dosen.php");
 
           <td class="data"><?= $mahasiswa->nim ?></td>
           <td class="data"><?= $mahasiswa->nama ?></td>
+          <td class="data"><?= $mahasiswa->dosen_pa ?></td>
 
         </tr>
         </tr>
@@ -104,9 +105,7 @@ require_once("Dosen.php");
 
      </table>
 
-     <?php
-     }
-     ?>
+
 
 
     </div>

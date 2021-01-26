@@ -17,21 +17,16 @@ class Mahasiswa
   {
   $this->nim = $nim;
   $this->initMahasiswa();
-  $this->initMahasiswanbypa();
+
 
   }
-  public function Mahasiswabypa($nidn_pa)
-  {
-    $this->dosen_pa = $nidn_pa;
-
-  }
-
 
 
   private function initMahasiswa()
   {
   $listmhs = new Daftar_mahasiswa();
   $mhs = $listmhs->getMahasiswaByNIM( $this->nim );
+
 
   $this->nama = $mhs['nama'];
   $this->tanggalmasuk = $mhs['tanggal_masuk'];
@@ -41,12 +36,7 @@ class Mahasiswa
   $this->dosen_pa = new Dosen( $mhs['dosen_pa'] );
 
   }
-private function initMahasiswanbypa()
-{
-  $listmhs = new Daftar_mahasiswa();
 
-  $this->nama->$mhs['nama'];
-}
 
 
 
