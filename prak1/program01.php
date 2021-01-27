@@ -1,9 +1,20 @@
 <?php
- $guestName = $_GET['guest'];
+if (isset($_GET['guest'])) {
+    $guestName = $_GET['guest'];
+} else {
+  $guestName = "jervin";
+}
+
+
  $today = date('l');
  $todayDate = date("F j, Y, g:i a");
 
- $backgroundcolor = $_GET['color'];
+if (isset($_GET['color'])) {
+  $backgroundcolor = $_GET['color'];
+}else {
+  $backgroundcolor = "white";
+}
+
 
  ?>
 
@@ -20,5 +31,8 @@
 
     <h2>Hello, <?php echo $guestName ?>;</h2>
     <h3>Happy <?php echo $today ?></h3>
+    <hr>
+    <h3>Ganti nama dengan parameter guest</h3>
+    <h3>Ganti warna background dengan parameter color</h3>
   </body>
 </html>
