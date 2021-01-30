@@ -18,7 +18,7 @@
               //INNER JOIN views vw ON rm.dview = vw.vcode";
 
     //sql Query codeigniter
-      $this->db->select('*');
+      $this->db->select('member_ID,nama,country.Country AS Asal,kota,telepon,hp');
       $this->db->join('country ',' ON (members.negara = country.CC)');
 
       //$this->db->where('SELECT * FROM `members` WHERE negara = 'ID''));
