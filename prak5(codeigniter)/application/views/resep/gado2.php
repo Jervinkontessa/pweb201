@@ -17,8 +17,7 @@
         </nav>
         </header>
         <h2>5.Gado-Gado Surabaya</h2>
-          <img src="asset\Gado-Gado Surabaya.jpg" alt="Gado-Gado Surabaya"
-           width="400" height="250">
+        
             <p>resep gado-gado Surabaya yang memiliki keunikan tersendiri dibandingkan lainnya.
             Menyenangkannya juga, kalau bicara soal hidangan ini, pastinya tidak jauh dari rasa
             lezat dan juga proses memasaknya yang mudah.

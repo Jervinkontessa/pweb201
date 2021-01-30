@@ -16,7 +16,7 @@
         </header>
 
                <h2>2.Balado Ayam Pandan</h2>
-                 <img src="asset\Balado.jpg" width="400">
+                 
                   <p>Penyuka pedas pasti takkan melewatkan resep balado ayam pandan yang bukan cuma pedas
                   tetapi juga aromatik ini. Ide balado ayam pandan yang dimasak dengan bumbu lain yang
                   membuatnya menarik ini mirip seperti masakan Sulawesi Utara. Ia memadukan serai, daun

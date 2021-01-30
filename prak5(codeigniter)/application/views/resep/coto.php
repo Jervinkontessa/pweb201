@@ -17,7 +17,7 @@
       </nav>
       </header>
       <h2>4.Coto Makassar</h2>
-      <img src="asset\coto makassar.jpg"alt="Coto makassar" width="400" height="250">
+    
       <p>Ketika menyebutkan jenis-jenis masakan terkenal asal Sulawesi Selatan pastinya tidak
       akan jauh dari yang namanya Coto Makassar. Maklum, kuliner kota ini memang terkenal
       akan beragam masakan daging serta kuahnya. Itulah serunya berkunjung ke kota tepi laut

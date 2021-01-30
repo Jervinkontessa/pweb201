@@ -39,7 +39,7 @@
               <td><?= $room['room']  ?></td>
               <td><?= $room['rtype']  ?></td>
               <td><?= $room['dview']  ?></td>
-              <td><?= $room['F_rate']  ?></td>
+              <td><?= $room['vrate']  ?></td>
               <td><?php if (empty($room['date_out'])):echo "UNAVAILBLE"; else: echo "AVAILABLE"; endif; ?></td>
 
             </tr>

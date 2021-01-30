@@ -18,7 +18,7 @@
         </nav>
         </header>
         <h2>3.Buntut Sapi Khas Minang</h2>
-         <img src="asset\Buntut Sapi Kuah Asam Padeh Khas Minang.jpg" width="400">
+        >
             <p>Terkenal akan kesegarannya, menu ini memiliki banyak penggemar di Indonesia.
             Pada umumnya, boga bahari seperti ikan yang menjadi bahan utamanya. Kali ini,
             kita akan menggunakan buntut sapi yang bisa memberikan rasa yang otentik.

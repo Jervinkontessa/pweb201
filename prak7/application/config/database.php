@@ -8,10 +8,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'jervin',
-	'password' => 'jervin09',
-	'database' => 'pwebhotel',
+	'hostname' => getenv ('DB_HOST'),
+	'username' => getenv ('DB_USER'),
+	'password' => getenv ('DB_PASS'),
+	'database' => getenv ('DB_DATA'),
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
