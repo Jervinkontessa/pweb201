@@ -32,5 +32,18 @@
      $query = $this->db->get( 'guests' );
      return $query->result_array();
    }
+   public function listguests( $where='' )
+   {
+     // code...  $this->db->select('*');
+
+       //$this->db->where('(MONTH(date_in)AND MONTH(date_out) = 11'));
+       if ( $where != '' ) $this->db->where( $where );
+
+
+
+
+      $query = $this->db->get( 'guests' );
+      return $query->result_array();
+   }
 
  }

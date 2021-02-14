@@ -51,5 +51,19 @@
      $query = $this->db->get( 'members' );
      return $query->result_array();
    }
+   public function listmembers( $where = '' )
+   {
+     $this->db->select('*');
+     $this->db->join('country ',' ON (members.negara = country.CC)');
+
+     //$this->db->where('SELECT * FROM `members` WHERE negara = 'ID''));
+     if ( $where != '' ) $this->db->where( $where );
+
+
+
+
+    $query = $this->db->get( 'members' );
+    return $query->result_array();
+   }
 
  }

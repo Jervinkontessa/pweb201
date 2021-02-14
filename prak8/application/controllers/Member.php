@@ -22,7 +22,7 @@ class Member extends CI_Controller
     }
 
     $data['judul'] = "PWebhotel-roomlist";
-    $data['members'] = $this->member_model->memberlist( $where );
+    $data['members'] = $this->member_model->listmembers( $where );
     $data['negara'] = $this->member_model->negaralist();
 
     $this->load->view( "layout/header");

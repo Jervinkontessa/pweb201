@@ -22,7 +22,7 @@ class Guest extends CI_Controller
     }
 
     $data['judul'] = "PWebhotel-guestlist";
-    $data['guest'] = $this->guest_model->guestlist( $where );
+    $data['guest'] = $this->guest_model->listguests( $where );
 
     $this->load->view( "layout/header");
     $this->load->view( "guestlist", $data );
